@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071827"/><stop offset="1" stop-color="#0d3b49"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="url(#bg)"/>
+  <circle cx="1260" cy="180" r="260" fill="#15d1a3" opacity=".08"/>
+  <text x="120" y="185" fill="#7bf2d0" font-family="Segoe UI,Arial" font-size="34" font-weight="700" letter-spacing="6">PYTHON · FASTAPI · SQLITE</text>
+  <text x="120" y="310" fill="white" font-family="Segoe UI,Arial" font-size="76" font-weight="800">Resilient Webhook</text>
+  <text x="120" y="395" fill="white" font-family="Segoe UI,Arial" font-size="76" font-weight="800">Bridge</text>
+  <text x="120" y="485" fill="#a9c8d0" font-family="Segoe UI,Arial" font-size="34">Verified ingestion. Durable delivery. Zero duplicate side effects.</text>
+  <g transform="translate(180 610)" stroke="#2be3b5" stroke-width="10" fill="none" filter="url(#glow)">
+    <circle cx="0" cy="0" r="42"/><circle cx="360" cy="0" r="42"/><circle cx="720" cy="0" r="42"/>
+    <path d="M45 0h265M405 0h265"/><path d="m275 -26 35 26-35 26M635 -26l35 26-35 26"/>
+  </g>
+  <g fill="#d9fff5" font-family="Segoe UI,Arial" font-size="24" text-anchor="middle">
+    <text x="180" y="700">HMAC verify</text><text x="540" y="700">Idempotent store</text><text x="900" y="700">Retry delivery</text>
+  </g>
+  <rect x="1110" y="575" width="340" height="150" rx="24" fill="#0d2632" stroke="#2be3b5" stroke-width="2"/>
+  <text x="1150" y="630" fill="#7bf2d0" font-family="Consolas,monospace" font-size="23">HTTP 503</text>
+  <text x="1150" y="675" fill="white" font-family="Consolas,monospace" font-size="23">retry in 8s ✓</text>
+</svg>
+
