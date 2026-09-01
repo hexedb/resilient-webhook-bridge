@@ -1,0 +1,22 @@
+services:
+  bridge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET:-development-secret-change-me}
+      DESTINATION_URL: ${DESTINATION_URL:-http://receiver:9000/events}
+      DATABASE_PATH: /data/webhook_bridge.db
+    volumes:
+      - bridge-data:/data
+    depends_on:
+      - receiver
+
+  receiver:
+    image: mendhak/http-https-echo:35
+    environment:
+      HTTP_PORT: 9000
+
+volumes:
+  bridge-data:
+
